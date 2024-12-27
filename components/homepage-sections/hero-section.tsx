@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="relative h-screen overflow-hidden bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-primary-foreground">
+    <section className="relative h-screen overflow-hidden bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-primary-foreground px-2">
       <div className="container max-w-7xl mx-auto relative z-10 flex h-full items-center justify-center">
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="animate-fade-in text-4xl font-bold tracking-tight sm:text-6xl">

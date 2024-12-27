@@ -11,7 +11,7 @@ import {
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-primary text-primary-foreground px-2">
       <div className="container max-w-[1440px] mx-auto py-12 md:py-16">
         <div className="grid gap-8 md:grid-cols-4">
           <div className="space-y-4">

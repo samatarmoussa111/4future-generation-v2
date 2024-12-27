@@ -49,7 +49,11 @@ export function Navigation() {
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Programs</NavigationMenuTrigger>
+                <NavigationMenuTrigger>
+                  <Link href="/programs" legacyBehavior passHref>
+                    Programs
+                  </Link>
+                </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-2 p-4">
                     {programs.map((program) => (

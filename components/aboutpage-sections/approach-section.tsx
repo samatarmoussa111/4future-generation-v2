@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function ApproachSection() {
   return (
-    <section className="bg-muted py-24 md:py-32">
+    <section className="bg-muted py-24 md:py-32 px-2">
       <div className="container max-w-7xl mx-auto">
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="space-y-6">
