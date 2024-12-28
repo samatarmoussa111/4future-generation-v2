@@ -45,7 +45,7 @@ export function MentoringSection() {
               </li>
             </ul>
             <Button asChild>
-              <Link href="/programs/mentoring">Learn More</Link>
+              <Link href="/contact">Learn More</Link>
             </Button>
           </div>
         </div>

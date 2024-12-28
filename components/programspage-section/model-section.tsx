@@ -24,7 +24,7 @@ export function ModelSection() {
               <li>• Evidence-based teaching methods</li>
             </ul>
             <Button asChild>
-              <Link href="/programs/model">Learn More About Our Model</Link>
+              <Link href="/contact">Learn More About Our Model</Link>
             </Button>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-lg lg:order-1">

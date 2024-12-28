@@ -38,7 +38,7 @@ export function NavigationSection() {
               </li>
             </ul>
             <Button asChild>
-              <Link href="/programs/school-readiness">Learn More</Link>
+              <Link href="/contact">Learn More</Link>
             </Button>
           </div>
           <div className="relative aspect-square overflow-hidden rounded-lg lg:order-1">

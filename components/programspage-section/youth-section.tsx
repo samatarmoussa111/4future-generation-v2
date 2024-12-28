@@ -52,7 +52,7 @@ export function YouthSection() {
               ))}
             </div>
             <Button asChild>
-              <Link href="/programs/youth">Join Our Youth Programs</Link>
+              <Link href="/contact">Join Our Youth Programs</Link>
             </Button>
           </div>
           <div className="relative aspect-video overflow-hidden rounded-lg lg:aspect-square">

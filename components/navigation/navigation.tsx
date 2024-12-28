@@ -78,7 +78,7 @@ export function Navigation() {
             </NavigationMenuList>
           </NavigationMenu>
           <Button variant="default" asChild>
-            <Link href="/donate">Donate Now</Link>
+            <Link href="/contact">Donate Now</Link>
           </Button>
         </div>
 
@@ -109,7 +109,7 @@ export function Navigation() {
               </div>
               <nav className="mt-6 flex flex-col gap-4">
                 <Link
-                  href="/about"
+                  href="/about-us"
                   className="block px-2 py-1 text-lg hover:text-primary"
                 >
                   About
@@ -133,7 +133,7 @@ export function Navigation() {
                   Contact
                 </Link>
                 <Button variant="default" asChild className="mt-4">
-                  <Link href="/donate">Donate Now</Link>
+                  <Link href="/contact">Donate Now</Link>
                 </Button>
               </nav>
             </SheetContent>

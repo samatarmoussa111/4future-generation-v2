@@ -16,7 +16,7 @@ export function HeroSection() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button size="lg" variant="secondary" asChild>
-              <Link href="/donate">Donate Now</Link>
+              <Link href="/contact">Donate Now</Link>
             </Button>
             <Button
               size="lg"
