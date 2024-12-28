@@ -14,7 +14,12 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 
 export function Navigation() {
@@ -94,7 +99,7 @@ export function Navigation() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex items-center gap-2">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_future_generation-xOgD7fjhxzZfbiHCSeCMVCiV3M1FXO.png"
+                  src="/logo_future_generation.png"
                   alt="4 Future Generations Logo"
                   width={32}
                   height={32}
@@ -108,33 +113,40 @@ export function Navigation() {
                 </span>
               </div>
               <nav className="mt-6 flex flex-col gap-4">
-                <Link
-                  href="/about-us"
-                  className="block px-2 py-1 text-lg hover:text-primary"
-                >
-                  About
-                </Link>
+                <SheetClose asChild>
+                  <Link
+                    href="/about-us"
+                    className="block px-2 py-1 text-lg hover:text-primary"
+                  >
+                    About
+                  </Link>
+                </SheetClose>
                 <div className="space-y-3">
                   <h4 className="font-medium">Programs</h4>
                   {programs.map((program) => (
-                    <Link
-                      key={program.title}
-                      href={program.href}
-                      className="block px-2 py-1 text-sm hover:text-primary"
-                    >
-                      {program.title}
-                    </Link>
+                    <SheetClose asChild key={program.title}>
+                      <Link
+                        href={program.href}
+                        className="block px-2 py-1 text-sm hover:text-primary"
+                      >
+                        {program.title}
+                      </Link>
+                    </SheetClose>
                   ))}
                 </div>
-                <Link
-                  href="/contact"
-                  className="block px-2 py-1 text-lg hover:text-primary"
-                >
-                  Contact
-                </Link>
-                <Button variant="default" asChild className="mt-4">
-                  <Link href="/contact">Donate Now</Link>
-                </Button>
+                <SheetClose asChild>
+                  <Link
+                    href="/contact"
+                    className="block px-2 py-1 text-lg hover:text-primary"
+                  >
+                    Contact
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Button variant="default" asChild className="mt-4">
+                    <Link href="/contact">Donate Now</Link>
+                  </Button>
+                </SheetClose>
               </nav>
             </SheetContent>
           </Sheet>
